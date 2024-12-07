@@ -25,6 +25,8 @@ public class DoorBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        txt = GameObject.FindGameObjectWithTag("DoorTxt").GetComponent<TextMeshProUGUI>();
+        ac = GameObject.FindGameObjectWithTag("prefabManager").GetComponent<AudioController>();
         if (collision.gameObject.tag == "Player")
         {
             int i = 0;
@@ -51,6 +53,8 @@ public class DoorBehavior : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
+        txt = GameObject.FindGameObjectWithTag("DoorTxt").GetComponent<TextMeshProUGUI>();
+        ac = GameObject.FindGameObjectWithTag("prefabManager").GetComponent<AudioController>();
         if (collision.gameObject.tag == "Player")
         {
 

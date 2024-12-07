@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
+using UnityEngine.SceneManagement;
 
 public class PrimerMenu : MonoBehaviour
 {
@@ -81,6 +81,11 @@ public class PrimerMenu : MonoBehaviour
 
         help.SetActive(false);
         menu.SetActive(true);
+    }
+    public void Starter()
+    {
+
+        SceneManager.LoadScene("SampleScene");
     }
 
 }

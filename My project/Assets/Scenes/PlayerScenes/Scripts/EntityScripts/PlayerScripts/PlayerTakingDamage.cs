@@ -69,7 +69,7 @@ public class PlayerTakingDamage : MonoBehaviour
         health = maxhealth;
 
         if (cpm.Checks[cpm.Checks.Count - 1] == gameObject)
-            gameObject.transform.position = new Vector3(7, 1, 6);
+            gameObject.transform.position = new Vector3(26.25f, 1, 5.5f);
         else
             gameObject.transform.position = cpm.Checks[cpm.Checks.Count-1].transform.position;
         updateHealth();

@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 883816449999237076}
-  animator: {fileID: 933044637488391670}
   fade: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &933044637488391670
 Animator:
   serializedVersion: 5
@@ -225,7 +225,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
